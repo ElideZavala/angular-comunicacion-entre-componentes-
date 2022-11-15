@@ -10,10 +10,12 @@ export class AppComponent {
   title = 'cc-template-vars';
 
   addNewPicture(gallery: GalleryComponent) {
-    console.log('added new picture');
+    // Add a new picture
+    gallery.pictures.unshift(gallery.generateImage());
   }
 
   removeFirstPicture(gallery: GalleryComponent) {
-    console.log('removed first picture');
+    // Remove the first picture
+    gallery.pictures.shift();
   }
 }
