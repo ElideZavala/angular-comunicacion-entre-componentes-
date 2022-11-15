@@ -12,13 +12,13 @@ export class AppComponent {
 
   addNewPicture() {
     // agregamos una imaegn adelante
-    this.gallery.picture.unshift(
+    this.gallery.pictures.unshift(
       this.gallery.generateImage()
     );
   }
 
   removeFirstPicture() {
     // Eliminamos la primera imagen
-    this.gallery.picture.shift();
+    this.gallery.pictures.shift();
   }
 }
